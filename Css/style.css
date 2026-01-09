@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500px;
+}
+
+p{
+    font-size: 1.6rem;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+/* ############################# Utility Classes ###################################### */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    color: #555;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+
+.btn:hover{
+    background: #f6f6f6;
+}
+.btn-primary{
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.btn-secondary{
+    border: 2px solid #e63946;
+}
+
+
+
+/* ################################ Home Page ######################################### */
+.main-header{
+    height: 95vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0, 0.5)), url('../IMG/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4em;
+    position: relative;
+}
+
+.navbar .wt{
+    font-weight: 400;
+    display: inline-block;
+}
+
+.navbar .nav-items, li{
+    display: inline-block;
+    list-style: none;
+    letter-spacing: 0.15em;
+}
+
+.navbar .nav-items a{
+    color: white;
+    font-size: 2rem;
+    margin: 0.8em;
+    padding: 0.2em;
+}
+
+.navbar .nav-items a:hover{
+    /* margin-bottom: 3em; */
+    border-bottom: 2px solid white;
+}
+
+.navbar ul{
+    float: right;
+    margin-top: 1em;
+}
+
+
+.header-center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2));
+}
+
+.header-center h1{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.header-center p{
+    text-transform: uppercase;
+}
+
+
+/* ############################### ShowCase Section Styling ####################### */
+
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.showcase .row{
+    height: 350px;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+
+.row1{
+    margin-bottom: 10em;
+}
+
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    height: 100%;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    /* height: 343px; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .text-box{
+    padding: 3em;
+    height: 100%;
+    background-color: #fff;
+}
+
+.row .text-box h2{
+    text-transform: uppercase;
+}
+
+
+.showcase .row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* .showcase .row .img-box, .text-box{
+    width: 50%;
+}
+
+.showcase .row .img-box img{
+    width: 100%;
+}
+
+.showcase .row1 .img-box, .row2 .text-box{
+    float: left;
+}
+
+.showcase .row .text-box h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.showcase .row .text-box p{
+    font-size: 1.8rem;
+    /* text-transform: uppercase; */
+/* }
+.showcase .row1 .text-box, .row2 .img-box{
+    float: right;
+}
+
+
+.showcase .row{
+    margin: 4em 0;
+}
+
+.showcase .row .text-box{
+    background: #fff;
+    height: 100%;
+    padding: 2em;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+} */ 
+
+
+
+
+/* ############################## showcase-2 styling ##################### */
+
+.showcase2{
+    padding: 10em 0;
+}
+
+.feature{
+    /* display: inline-block; */
+    width: 33.3333333333%;
+    height: 200px;
+    text-align: center;
+    padding: 2em;
+    float: left;
+}
+
+.box{
+    box-shadow: 5px 5px 20px 0px #2632387e;
+    /* padding: 5em; */
+}
+
+.box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.feature h3{
+    font-size: 2rem;
+}
+
+.adventure{
+    background-color: #263238;
+    color: white;
+}
+
+.price{
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: white;
+}
+
+
+
+/* #################### footer sytling ################# */
+.main-footer{
+    text-align: center;
+    padding: 2em;
+    background: #263238;
+}
+
+.main-footer i{
+    margin:0.5em;
+    /* margin-bottom:0.4em; */
+}
+
+
+
+
+/* ######################### about page styling ################### */
+.about-navbar{
+    background: #263238;
+    padding: 2em;
+    margin-bottom: 6em;
+}
+
+
+.about-box1, .about-box2{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.container ul .about-box1 li, .container  .about-box2 li{
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2em;
+}
+
+.container ul .about-box1 li::before, .container  .about-box2 li::before{
+    content: '✔ ';
+    color: #d64c7f;
+}
+
+.container .about-para{
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.container .about-us{
+    width: 95%;
+    border-bottom: 5px solid #e63946;
+}
+
+.container .about-box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container .data-container .about-data{
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+
+.container .data-container .about-data p{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container .data-container{
+    margin-top: 4em;
+    /* text-align: center; */
+}
+
+.container .data-container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.banner{
+    margin-top: 3.5em;
+    /* border: 8px solid rgb(8, 7, 7); */
+    width: 95%;
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    padding: 1em;
+    box-shadow: 5px 5px 20px 0px #26323866;
+}
+
+
+.banner .banner-heading{
+    /* color: white; */
+    float: left;
+    margin-top: 0.5em;
+}
+
+.banner .banner-btn{
+    font-size: 3rem;
+    font-weight: 500;
+    /* display: inline-block; */
+    border: 3px solid #fff;
+    /* color: #fff; */
+    padding:0.2em 1em;
+    text-transform: uppercase;
+    float: right;
+}
+
+
+.banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+/* ############################### Contact Styling ################### */
+
+
+.contact-navbar{
+    background: #263238;
+    padding: 2em;
+}
+
+.contact-page .left-aside{
+    width: 49%;
+    float: left;
+    background-color: #fff;
+    height: 700px;
+}
+
+.contact-page .right-aside{
+    width: 49%;
+    float:right;
+    background-color: #fff;
+    height: 700px;
+}
+
+
+.contact-asides{
+    padding: 5rem 0;
+    height: 100%;
+}
+
+.contact-page .container .contact-asides::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.contact-asides .right-aside input{
+    width: 90%;
+    height: 25px;
+    /* margin: 0 auto; */
+    /* margin: 3px 2em; */
+}
+
+.contact-asides .right-aside label{
+    font-size: 1.6em;
+    /* margin: 0 auto; */
+}
+
+.contact-asides .right-aside label::after{
+    content: '*';
+    color: #d64c7f;
+    padding-left: 5px;
+}
+
+
+.right-aside textarea{
+    width: 90%;
+}
+
+.right-aside button{
+    margin: 0 auto;
+    display: block;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.right-aside input:focus, textarea:focus{
+    outline: none;
+}
+
+.contact-asides .left-aside, .right-aside{
+    padding: 2em;
+}
+
+.contact-asides .left-aside img{
+    max-width: 90%;
+    object-fit: cover;
+    min-height: 40rem;
+    object-position: right;
+}
+
+
+.contact-asides .right-aside h3{
+    border-bottom: 5px solid #e63946;
+}
+.contact-page{
+    background-color: #f7f7f7;
+}
+
+
+.contact-asides .left-aside h2, i{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.contact-asides .left-aside p{
+    margin-bottom: 1em;
+}
+
+
+
+
+/* ###################################### Media Queries ############################# */
+
+
+@media (max-width : 550px){
+    :root{
+        font-size: 50%;
+    }
+
+    .navbar{
+        text-align: center;
+    }
+
+    .navbar ul, .wt{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+
+    /* #### showcase -1 ##### */
+    .showcase .row{
+        height: auto;
+    }
+
+    .showcase .row .img-box,
+    .showcase .row .text-box{
+        float: none;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .row .text-box{
+        margin-bottom: 3em;
+    }
+
+
+    /* #### showcase - 2 ##### */
+
+    .showcase2 .feature{
+        float: none;
+        width: 100%;
+        margin-bottom: 1em;
+        height: 50%;
+    }
+
+
+    /* ##### About ##### */
+    .banner{
+        text-align: center;
+        padding-bottom: 1.5em;
+    }
+
+    .banner .banner-heading{
+    /* color: white; */
+        float: none;
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    .banner .banner-btn{
+        width: 100%;
+        float: none;
+    }
+
+    .container .about-us{
+        width: 100%;
+    }
+
+
+
+    /* ###### Contact page #### */
+
+    .contact-page .contact-asides .left-aside{
+        float: none;
+        height: auto;
+        width: 100%;
+        margin-bottom: 5em;
+    }
+
+    .contact-page .contact-asides .right-aside{
+        float:none;
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+@media (min-width:551px) and (max-width : 768px){
+    :root{
+        font-size: 50%;
+    }
+
+    .navbar{
+        text-align: center;
+    }
+
+    .navbar ul, .wt{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+
+    /* #### showcase -1 ##### */
+    .showcase .row{
+        height: 400px;
+    }
+
+    /* .showcase .row .img-box img{
+        height: 250px;
+    } */
+    /* .showcase .row .img-box,
+    .showcase .row .text-box{
+        float: none;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .row .text-box{
+        margin-bottom: 3em;
+    }  */
+
+
+    /* #### showcase - 2 ##### */
+
+    .showcase2 .feature{
+        float: none;
+        width: 100%;
+        margin-bottom: 1em;
+        height: 50%;
+    }
+
+
+    /* ##### About ##### */
+    .banner{
+        margin-top: 5em;
+        text-align: center;
+        padding-bottom: 1.5em;
+    }
+
+    .banner .banner-heading{
+    /* color: white; */
+        float: none;
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    .banner .banner-btn{
+        width: 100%;
+        float: none;
+    }
+
+    .container .about-us{
+        width: 100%;
+    }
+
+
+
+    /* ###### Contact page #### */
+
+    .contact-asides .right-aside,
+    .contact-asides .left-aside{
+        height: auto;
+    }
+}
+
+@media (max-width:1200px){
+
+    :root{
+        font-size: 55%;
+    }
+    .banner{
+        margin-top: 5em;
+        text-align: center;
+        padding-bottom: 1.5em;
+    }
+
+    .banner .banner-heading{
+    /* color: white; */
+        float: none;
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    .banner .banner-btn{
+        width: 100%;
+        float: none;
+    }
+
+    .container .about-us{
+        width: 100%;
+    }
+}
+
+@media (max-width : 470px){
+    :root{
+        font-size: 44%;
+    }
+
+    .about-main .container p{
+        word-spacing: 0.3em;
+        /* font-size: 2.5em; */
+    }
+}
+
+
+
+/* ###### media quaries for landscape mode #### */
+
+@media (orientation: landscape) and (max-height:500px){
+    .main-header{
+        height: 90vmax;
+    }
+}
